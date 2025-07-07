@@ -1,5 +1,4 @@
-﻿
-<html>
+﻿<html>
 <head>
 
     <title>Northwind</title>
@@ -45,6 +44,10 @@
             </div>
         </div>
     </nav>
+
+
+
+
     <div>
         <h2>Ürünler</h2>
         <a href="/product/create">Ürün Ekle</a>
@@ -57,12 +60,13 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var product in ViewBag.Products as List<MVC_DataTransferNorthwind.Models.Northwind.Product>)
+                @foreach (var Product in ViewBag.; roducts as List<MVC_DataTransferNorthwind.Models.Northwind.Product>)
+
                 {
                     <tr>
-                        <td>@product.ProductId</td>
-                        <td>@product.ProductName</td>
-                        <td>@product.UnitPrice</td>
+                        <td>@Product.ProductId</td>
+                        <td>@Product.ProductName</td>
+                        <td>@Product.UnitPrice</td>
                     </tr>
                 }
             </tbody>

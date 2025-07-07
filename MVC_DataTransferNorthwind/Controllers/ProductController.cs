@@ -11,9 +11,11 @@ namespace MVC_DataTransferNorthwind.Controllers
         NorthwindContext context = new NorthwindContext();
 
         [HttpGet]
-        public IActionResult Create()
+      
+      
+        public IActionResult Index()
         {
-            ViewBag.Products = context.Products.ToList();
+            ViewBag.Product = context.Products.ToList();
             return View();
         }
         [HttpPost]
